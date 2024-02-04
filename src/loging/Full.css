@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* :root{
+    --colr1:#f4d4ac;
+    --colr2:#e29f5b;
+    --colr3:#956717 ;
+   
+  } */
+  
+  :root{
+    --colr1:#f4d4ac;
+    --colr2:#e29f5b;
+    --colr3:#94590b ;
+   
+  }
+
+  .all {
+    background: radial-gradient(circle,#fbe798, var(--colr1), var(--colr2));
+    height:100%;
+    width: 100%;
+    display:block;
+  }
+
+   .tow{
+    display: flex;
+   }
+
+   .part1{
+     width: 20%;
+     text-align: center;
+    }
+
+  .part2{
+    padding-top: 0.5rem;
+    background-color: rgb(32, 27, 24);
+    width: 80%;
+  }
+   
+ nav {
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vh;
+    width: 100%;
+    background-color:var(--colr3);
+    color: black;
+    z-index: 100;
+  }
+
+  .title {
+    display:flex;
+    align-items: center;
+    margin-left:1rem;
+   }
+
+ nav ul {
+    display:inline-block;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--colr1);
+    padding: 5px;
+    font-size:large;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--colr1);
+    border-color: var(--colr1);
+    border: 5px;
+    border-radius: 4rem;
+    padding:10px;
+    color: var(--colr3);
+    font-weight: bold;
+  }
+  
+   table {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+    width: 97%;
+    border-collapse:separate;
+    background-color:white;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: small;
+    border: 5px solid var(--colr3);
+    box-shadow: 0 0 10px var(--colr1);
+   
+  }
+  
+  th {
+    background-color: var(--colr1);
+    color: var(--colr3);
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid var(--colr3);
+    text-align: center;
+   
+    
+  }
+
+  td  {
+    
+    padding: 4px 15px;
+    border-bottom: 1px solid #e9a5a5;
+  }
+
+  tr:hover {
+    background-color:rgb(248, 224, 208);
+  }
+
+  .off{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-Size: 50px;
+    background-Color: red;
+    border: none;
+    color: #fff;
+    border-Radius: 50% ;
+    width: 50px;
+    height: 50px ;
+    display: flex ;
+    justify-Content: center;
+    align-Items: center ;
+    cursor: pointer ;
+    box-Shadow: 0 2px 5px rgba(0, 0, 0, 10);
+   }
+  
+  
+   .add {
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    width: 5rem;
+    background-color:var(--colr3);
+    color: white;
+    padding: 15px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 45%;
+    cursor: pointer;
+  }
+  
+  .add:hover {
+    background-color:var(--colr1);
+    color: var(--colr3);
+  }
+  
+  .input{
+    width: 100%;
+    padding: 10px;
+    margin-Bottom: 10px;
+    border-Radius: 5px ;  
+
+ }
+ .showBlock{
+  position: absolute ;
+  top: 50% ;
+  left: 50% ;
+  transform: translate(-50%, -50%) ;
+  width: 500px ;
+  height: 80vh ;
+  background: linear-gradient(45deg,var(--colr2), var(--colr1),  var(--colr3));
+   border: 3px solid #ccc;
+  box-Shadow: 5px 5px 10px var(--colr1) ;
+  padding: 20px ;
+  display: flex ;
+  justify-Content: center ;
+  align-Items: center ;
+  border-Radius: 10px ;
+ 
+ }
+
+ .formsearch {
+  margin-top: 2rem;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  width: 30rem;
+}
+
+.inpSear {
+  width: 25%;
+  padding: 10px;
+  border: 3px solid var(--colr2);
+  border-radius: 4px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.selcSear{
+width: 27%;
+font-size: x-small;
+margin-right: 10px;
+border: 1px solid var(--colr3);
+}
+
+
+.butSear {
+  margin-left: 5px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #313133;
+  background: linear-gradient(90deg, var(--colr2) 0%, var(--colr1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px var(--colr3);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.butSear:hover , .butSear:focus {
+  color: var(--colr3);
+  transform: translateY(-6px);
+}
+
+ .footer {
+  background-color: var(--colr3);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: large;
+  height: 4vh;
+  width: 100%;
+  margin-Bottom: 0px;
+}
+/* *************************************************************************************/
+    
+.animate-character {
+  text-transform: uppercase;
+  background: linear-gradient(-225deg, #f53506, #cef678, #fbff00);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+  font-size: 23px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: -200% center;
+  }
+}
+
+h1 span {
+  padding-left: 2rem;
+  font-size: 55px;
+  font-family: 'Bad Script', cursive;
+  color: #111;
+  animation: glowing 5s linear infinite;
+}
+
+@keyframes glowing {
+  0%, 40% {
+    color: #fff;
+    filter: blur(5px);
+    text-shadow: 0 0 100px #ff0000, 0 0 20px #00b3ff;
+  }
+  60%, 100% {
+    color: #111;
+    text-shadow: none;
+    filter: blur(0px);
+  }
+}
+
+
+/* ***********************************************************************************/
+
+  @media screen and (max-width: 890px) {
+    h1 ,li a {
+      font-size: small;
+      margin-right: 0px;
+    }
+    
+    .title {
+      margin-left: 0.5rem;
+    }
+  
+    nav ul li {
+      margin-right: 7px;
+    }
+  
+    table {
+      margin-left: 0.5rem;
+      font-size: x-small;
+      border: 2px solid var(--colr3);
+    }
+
+    th {
+      font-weight:100;
+      padding: 1px;
+      border: 2px solid var(--colr3);
+    }
+  
+    td  {   
+      padding: 0px 1px;
+    }
+
+    .add{
+     top: 1rem;
+     width: 60px;
+     font-size: small;
+     padding: 5px;
+    }
+
+    .animate-character {
+      font-size: 17px;
+    }
+
+    .part1{
+      display: none;
+     }
+
+   .part2{
+     width: 100%;
+   }
+
+   .formsearch {
+    margin-left: 10px;
+    width: 25rem;
+  }
+
+  .selcSear{
+    width: 30%;
+    }
+
+
+
+    
+  }
